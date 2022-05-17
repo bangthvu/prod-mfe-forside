@@ -1,0 +1,24 @@
+.forside {
+  text-align: center;
+}
+
+.forside__box {
+     /* To correctly align image, regardless of content height: */
+     vertical-align: top;
+     display: inline-block;
+     /* To horizontally center images and caption */
+     text-align: center;
+     /* The width of the container also implies margin around the images. */
+     margin: 10px;
+  }
+
+  .article__header, .article__header2 {
+    text-align: left;
+  }
+  
+
+.square {
+  height: 250px;
+  width: 400px;
+  background-color: #555;
+}
