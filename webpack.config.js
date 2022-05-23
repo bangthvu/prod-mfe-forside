@@ -39,6 +39,14 @@ module.exports = (_, argv) => ({
           loader: "babel-loader",
         },
       },
+      {
+        test: /\.(png|jpe?g|gif)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+          },
+        ],
+      },
     ],
   },
 
@@ -47,7 +55,7 @@ module.exports = (_, argv) => ({
       name: "forside",
       filename: "remoteEntry.js",
       remotes: {
-        artikelside: "artikelside@https://prod-mfe-artikelside.vercel.app/remoteEntry.js"
+        artikelside: "artikelside@http://localhost:8082/remoteEntry.js"
       },
       exposes: {
         "./Forside": "./src/components/Forside",

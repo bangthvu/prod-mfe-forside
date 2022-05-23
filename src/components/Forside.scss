@@ -1,24 +1,44 @@
+
 .forside {
   text-align: center;
-}
 
-.forside__box {
+  &__row  {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border-style: solid;
+  
+  }
+
+  &__box {
      /* To correctly align image, regardless of content height: */
      vertical-align: top;
      display: inline-block;
      /* To horizontally center images and caption */
      text-align: center;
      /* The width of the container also implies margin around the images. */
-     margin: 10px;
+     margin-top: 10px !important;
+     margin-bottom: 20px !important;
+     order: 2;
+     
   }
 
-  .article__header, .article__header2 {
+  &__article-header, a  {
+    word-wrap: break-word;
+    font-size: 20px;
+    margin-top: 10px;
     text-align: left;
+    text-decoration: none;
+    color: black
   }
+
   
 
-.square {
-  height: 250px;
-  width: 400px;
-  background-color: #555;
 }
+
+.article_img {
+  width: 100%;
+}
+
+
+
